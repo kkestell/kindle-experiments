@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "name": "Hello World",
+      "priority": -999,
+      "exitmenu": false,
+      "refresh": false,
+      "status": false,
+      "action": "./bin/start.sh"
+    }
+  ]
+}

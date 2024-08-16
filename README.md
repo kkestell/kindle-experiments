@@ -26,3 +26,31 @@ See: [What commands can be given in the Kindle's search box?](https://ebooks.sta
 | Command | Description      |
 | ------- | ---------------- |
 | `;711`  | WiFi information |
+
+## Prevent Sleep
+
+1. Connect to the kindle via USB.
+2. Create a file (it can be empty) named `TESTD_PREVENT_SCREENSAVER` in the root directory.
+3. Reboot.
+
+## `/usr/sbin/eips`
+
+Clear the screen:
+
+```bash
+/usr/sbin/eips -c
+```
+
+Display an image:
+
+```bash
+/usr/sbin/eips -g ./frame.png -f
+```
+
+## `lipc-set-prop`
+
+Set frontlight intensity (0-24):
+
+```bash
+lipc-set-prop com.lab126.powerd flIntensity 12
+```
